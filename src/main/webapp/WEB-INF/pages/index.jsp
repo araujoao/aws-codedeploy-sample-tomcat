@@ -47,9 +47,9 @@
   </nav>
   <% if (!((String) request.getAttribute("deploymentGroupName")).contains("Production")) { %>
     <div class="alert alert-info" role="alert">
-      <p><strong>AWS CodeDeploy Application:</strong> ${applicationName}</p>
+      <p><strong>AWS CodeDeploy Aplicacao:</strong> ${applicationName}</p>
       <p><strong>AWS CodeDeploy Deployment Group:</strong> ${deploymentGroupName}</p>
-      <strong>Amazon EC2 Instances associated with this fleet:</strong>
+      <strong>Amazon EC2 Instances associadas with this fleet:</strong>
       <ul>
         <% for (final String instance : (List<String>) request.getAttribute("instanceIds")) { %>
           <% if (((Map<String, String>) request.getAttribute("instanceStates")).containsKey(instance)) { %>
@@ -120,7 +120,7 @@
           <div class="panel-body">
             Don't let this happen to your pooch! 
             Every purchase comes with free custom alterations to ensure a comfortable and snazzy fit.
-            <img src="images/alterations-dog4.png" style="width:287px;height:300px;">
+            <img src="images/sales-lobsterdog.png" style="width:287px;height:300px;">
           </div>
         </div>
       </div>
